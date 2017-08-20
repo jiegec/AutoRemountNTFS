@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CD90ED79CC5C069E7D7F2C9 /* libPods-AutoRemountNTFS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA91187D8F10F0621D7C4FF /* libPods-AutoRemountNTFS.a */; };
+		D014C27B1F49E034003D7F81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D014C27A1F49E034003D7F81 /* AppDelegate.m */; };
+		D014C27E1F49E034003D7F81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D014C27D1F49E034003D7F81 /* main.m */; };
+		D014C2811F49E034003D7F81 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D014C2801F49E034003D7F81 /* ViewController.m */; };
+		D014C2831F49E034003D7F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D014C2821F49E034003D7F81 /* Assets.xcassets */; };
+		D014C2861F49E034003D7F81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D014C2841F49E034003D7F81 /* Main.storyboard */; };
+		D0FA189C1F49E902003D2D31 /* remount.sh in Resources */ = {isa = PBXBuildFile; fileRef = D0FA189B1F49E902003D2D31 /* remount.sh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14C34F256B3060E4F77A48DB /* Pods-AutoRemountNTFS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoRemountNTFS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoRemountNTFS/Pods-AutoRemountNTFS.release.xcconfig"; sourceTree = "<group>"; };
+		2BA91187D8F10F0621D7C4FF /* libPods-AutoRemountNTFS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutoRemountNTFS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2EFC36BE5E08D433C1D869 /* Pods-AutoRemountNTFS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoRemountNTFS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoRemountNTFS/Pods-AutoRemountNTFS.debug.xcconfig"; sourceTree = "<group>"; };
+		D014C2761F49E034003D7F81 /* AutoRemountNTFS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoRemountNTFS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D014C2791F49E034003D7F81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D014C27A1F49E034003D7F81 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D014C27D1F49E034003D7F81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D014C27F1F49E034003D7F81 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D014C2801F49E034003D7F81 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D014C2821F49E034003D7F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D014C2851F49E034003D7F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D014C2871F49E034003D7F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0FA189B1F49E902003D2D31 /* remount.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = remount.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D014C2731F49E034003D7F81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD90ED79CC5C069E7D7F2C9 /* libPods-AutoRemountNTFS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B3799E43C5B72FF879A17B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BA91187D8F10F0621D7C4FF /* libPods-AutoRemountNTFS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A73973AEE590D2ED0D11BC5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE2EFC36BE5E08D433C1D869 /* Pods-AutoRemountNTFS.debug.xcconfig */,
+				14C34F256B3060E4F77A48DB /* Pods-AutoRemountNTFS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D014C26D1F49E034003D7F81 = {
+			isa = PBXGroup;
+			children = (
+				D014C2781F49E034003D7F81 /* AutoRemountNTFS */,
+				D014C2771F49E034003D7F81 /* Products */,
+				A73973AEE590D2ED0D11BC5D /* Pods */,
+				7B3799E43C5B72FF879A17B6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D014C2771F49E034003D7F81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D014C2761F49E034003D7F81 /* AutoRemountNTFS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D014C2781F49E034003D7F81 /* AutoRemountNTFS */ = {
+			isa = PBXGroup;
+			children = (
+				D014C2791F49E034003D7F81 /* AppDelegate.h */,
+				D014C27A1F49E034003D7F81 /* AppDelegate.m */,
+				D0FA189B1F49E902003D2D31 /* remount.sh */,
+				D014C27F1F49E034003D7F81 /* ViewController.h */,
+				D014C2801F49E034003D7F81 /* ViewController.m */,
+				D014C2821F49E034003D7F81 /* Assets.xcassets */,
+				D014C2841F49E034003D7F81 /* Main.storyboard */,
+				D014C2871F49E034003D7F81 /* Info.plist */,
+				D014C27C1F49E034003D7F81 /* Supporting Files */,
+			);
+			path = AutoRemountNTFS;
+			sourceTree = "<group>";
+		};
+		D014C27C1F49E034003D7F81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D014C27D1F49E034003D7F81 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D014C2751F49E034003D7F81 /* AutoRemountNTFS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D014C28A1F49E034003D7F81 /* Build configuration list for PBXNativeTarget "AutoRemountNTFS" */;
+			buildPhases = (
+				0796AC08B6FFE3FC820E88B5 /* [CP] Check Pods Manifest.lock */,
+				D014C2721F49E034003D7F81 /* Sources */,
+				D014C2731F49E034003D7F81 /* Frameworks */,
+				D014C2741F49E034003D7F81 /* Resources */,
+				71A4A6233E4F63014B8447C7 /* [CP] Embed Pods Frameworks */,
+				EF1952BE7D293CA8F84C7536 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoRemountNTFS;
+			productName = AutoRemountNTFS;
+			productReference = D014C2761F49E034003D7F81 /* AutoRemountNTFS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D014C26E1F49E034003D7F81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Jiege Chen";
+				TargetAttributes = {
+					D014C2751F49E034003D7F81 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D014C2711F49E034003D7F81 /* Build configuration list for PBXProject "AutoRemountNTFS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D014C26D1F49E034003D7F81;
+			productRefGroup = D014C2771F49E034003D7F81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D014C2751F49E034003D7F81 /* AutoRemountNTFS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D014C2741F49E034003D7F81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D014C2831F49E034003D7F81 /* Assets.xcassets in Resources */,
+				D0FA189C1F49E902003D2D31 /* remount.sh in Resources */,
+				D014C2861F49E034003D7F81 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0796AC08B6FFE3FC820E88B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AutoRemountNTFS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71A4A6233E4F63014B8447C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutoRemountNTFS/Pods-AutoRemountNTFS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF1952BE7D293CA8F84C7536 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutoRemountNTFS/Pods-AutoRemountNTFS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D014C2721F49E034003D7F81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D014C2811F49E034003D7F81 /* ViewController.m in Sources */,
+				D014C27E1F49E034003D7F81 /* main.m in Sources */,
+				D014C27B1F49E034003D7F81 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D014C2841F49E034003D7F81 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D014C2851F49E034003D7F81 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D014C2881F49E034003D7F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D014C2891F49E034003D7F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D014C28B1F49E034003D7F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE2EFC36BE5E08D433C1D869 /* Pods-AutoRemountNTFS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AutoRemountNTFS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.jiegec.AutoRemountNTFS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D014C28C1F49E034003D7F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14C34F256B3060E4F77A48DB /* Pods-AutoRemountNTFS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AutoRemountNTFS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.jiegec.AutoRemountNTFS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D014C2711F49E034003D7F81 /* Build configuration list for PBXProject "AutoRemountNTFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D014C2881F49E034003D7F81 /* Debug */,
+				D014C2891F49E034003D7F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D014C28A1F49E034003D7F81 /* Build configuration list for PBXNativeTarget "AutoRemountNTFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D014C28B1F49E034003D7F81 /* Debug */,
+				D014C28C1F49E034003D7F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D014C26E1F49E034003D7F81 /* Project object */;
+}
