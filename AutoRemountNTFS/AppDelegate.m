@@ -48,8 +48,8 @@
         if ([line rangeOfString:@"ntfs"].location != NSNotFound) {
             if ([line rangeOfString:@"read-only"].location != NSNotFound) {
                 NSUserNotification *notification = [[NSUserNotification alloc] init];
-                notification.title = @"New NTFS Read-only Volume Detected";
-                notification.informativeText = @"Now making it writable.";
+                notification.title = NSLocalizedString(@"New NTFS Read-only Volume Detected", nil);
+                notification.informativeText = NSLocalizedString(@"Now making it writable.", nil);
                 [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification:notification];
                 
                 NSString * path= [[NSBundle mainBundle] pathForResource:@"remount" ofType:@"sh"];
@@ -64,39 +64,10 @@
                 OSStatus err = [privilegedTask launch];
                 if (err == errAuthorizationSuccess) {
                     NSUserNotification *notification = [[NSUserNotification alloc] init];
-                    notification.title = @"NTFS Read-only Volume Now Writable";
-                    notification.informativeText = @"Now it is writable.";
+                    notification.title = NSLocalizedString(@"NTFS Read-only Volume Now Writable", nil);
+                    notification.informativeText = NSLocalizedString(@"Now it is writable.", nil);
                     [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification:notification];
                 }
-                /*
-                
-                STPrivilegedTask *privilegedTask = [[STPrivilegedTask alloc] init];
-                [privilegedTask setLaunchPath:@"/sbin/umount"];
-                NSArray *args = [NSArray arrayWithObject:[line componentsSeparatedByString:@" "][2]];
-                [privilegedTask setArguments:args];
-                
-                OSStatus err = [privilegedTask launch];
-                if (err == errAuthorizationSuccess) {
-                    STPrivilegedTask *privilegedTask = [[STPrivilegedTask alloc] init];
-                    [privilegedTask setLaunchPath:@"/bin/mkdir"];
-                    NSArray *args = [NSArray arrayWithObject:[line componentsSeparatedByString:@" "][2]];
-                    [privilegedTask setArguments:args];
-                    
-                    OSStatus err = [privilegedTask launch];
-                    if (err == errAuthorizationSuccess) {
-                        STPrivilegedTask *privilegedTask = [[STPrivilegedTask alloc] init];
-                        [privilegedTask setLaunchPath:@"/sbin/mount"];
-                        NSArray *args = [NSArray arrayWithObjects:@"-t", @"ntfs", @"-o",
-                                         @"rw,auto,nobrowse",[line componentsSeparatedByString:@" "][0],
-                                         [line componentsSeparatedByString:@" "][2],
-                                         nil];
-                        [privilegedTask setArguments:args];
-                        
-                        OSStatus err = [privilegedTask launch];
-                        
-                    }
-                }
-                 */
             }
         }
     }

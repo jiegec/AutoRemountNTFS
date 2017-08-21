@@ -14,6 +14,7 @@
 		D014C2831F49E034003D7F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D014C2821F49E034003D7F81 /* Assets.xcassets */; };
 		D014C2861F49E034003D7F81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D014C2841F49E034003D7F81 /* Main.storyboard */; };
 		D0FA189C1F49E902003D2D31 /* remount.sh in Resources */ = {isa = PBXBuildFile; fileRef = D0FA189B1F49E902003D2D31 /* remount.sh */; };
+		D0FA18A01F4A6186003D2D31 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0FA18A21F4A6186003D2D31 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,9 @@
 		D014C2851F49E034003D7F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D014C2871F49E034003D7F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0FA189B1F49E902003D2D31 /* remount.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = remount.sh; sourceTree = "<group>"; };
+		D0FA18A11F4A6186003D2D31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D0FA18A31F4A619A003D2D31 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		D0FA18A41F4A619B003D2D31 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 				D014C2841F49E034003D7F81 /* Main.storyboard */,
 				D014C2871F49E034003D7F81 /* Info.plist */,
 				D014C27C1F49E034003D7F81 /* Supporting Files */,
+				D0FA18A21F4A6186003D2D31 /* Localizable.strings */,
 			);
 			path = AutoRemountNTFS;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 				D014C2741F49E034003D7F81 /* Resources */,
 				71A4A6233E4F63014B8447C7 /* [CP] Embed Pods Frameworks */,
 				EF1952BE7D293CA8F84C7536 /* [CP] Copy Pods Resources */,
+				D0FA189D1F4A613A003D2D31 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -148,6 +154,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = D014C26D1F49E034003D7F81;
 			productRefGroup = D014C2771F49E034003D7F81 /* Products */;
@@ -165,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D014C2831F49E034003D7F81 /* Assets.xcassets in Resources */,
+				D0FA18A01F4A6186003D2D31 /* Localizable.strings in Resources */,
 				D0FA189C1F49E902003D2D31 /* remount.sh in Resources */,
 				D014C2861F49E034003D7F81 /* Main.storyboard in Resources */,
 			);
@@ -206,6 +214,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutoRemountNTFS/Pods-AutoRemountNTFS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D0FA189D1F4A613A003D2D31 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which bartycrouch > /dev/null; then\n# Incrementally update all Storyboards/XIBs strings files\nbartycrouch interfaces -p \"$PROJECT_DIR\"\n\n# Add new keys to Localizable.strings files from NSLocalizedString in code\nbartycrouch code -p \"$PROJECT_DIR\" -l \"$PROJECT_DIR\" -a -s -k\nelse\necho \"warning: BartyCrouch not installed, download it from https://github.com/Flinesoft/BartyCrouch\"\nfi";
+		};
 		EF1952BE7D293CA8F84C7536 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,8 +262,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				D014C2851F49E034003D7F81 /* Base */,
+				D0FA18A31F4A619A003D2D31 /* zh-Hans */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0FA18A21F4A6186003D2D31 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0FA18A11F4A6186003D2D31 /* Base */,
+				D0FA18A41F4A619B003D2D31 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -252,6 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -300,6 +332,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

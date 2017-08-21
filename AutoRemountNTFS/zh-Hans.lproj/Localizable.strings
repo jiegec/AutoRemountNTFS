@@ -1,0 +1,12 @@
+
+/* No comment provided by engineer. */
+"New NTFS Read-only Volume Detected" = "监测到新的只读NTFS盘符";
+
+/* No comment provided by engineer. */
+"Now it is writable." = "现在该NTFS盘符已经可读可写。";
+
+/* No comment provided by engineer. */
+"Now making it writable." = "现在正在设置该NTFS盘符为可读可写模式。";
+
+/* No comment provided by engineer. */
+"NTFS Read-only Volume Now Writable" = "现已经可以写入该NTFS盘符";
