@@ -1,6 +1,18 @@
 
 /* No comment provided by engineer. */
+"\tEject" = "\tEject";
+
+/* No comment provided by engineer. */
+"\tOpen" = "\tOpen";
+
+/* No comment provided by engineer. */
+"Eject" = "Eject";
+
+/* No comment provided by engineer. */
 "New NTFS Read-only Volume Detected" = "New NTFS Read-only Volume Detected";
+
+/* No comment provided by engineer. */
+"Now ejecting NTFS Volume %@" = "Now ejecting NTFS Volume %@";
 
 /* No comment provided by engineer. */
 "Now it is writable." = "Now it is writable.";
@@ -10,3 +22,15 @@
 
 /* No comment provided by engineer. */
 "NTFS Read-only Volume Now Writable" = "NTFS Read-only Volume Now Writable";
+
+/* No comment provided by engineer. */
+"NTFS Volume %@ Is Ejected" = "NTFS Volume %@ Is Ejected";
+
+/* No comment provided by engineer. */
+"Open" = "Open";
+
+/* No comment provided by engineer. */
+"Please wait." = "Please wait.";
+
+/* No comment provided by engineer. */
+"You can unplug the device now." = "You can unplug the device now.";

@@ -10,6 +10,9 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-
 @end
+
+NSStatusItem *statusItem;
+NSMenu *menu;
+NSMutableArray<NSString *> *ntfsDevices;
 
